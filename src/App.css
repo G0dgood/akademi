@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+ .title_search_container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.title_search_student_container{
+		display: flex; 
+  align-items: center; 
+		gap: 20px;
+	}
+
+	.title_student_container{ 
+display: flex; 
+justify-content: center;
+align-items: center;
+padding: 10px 25px;
+gap: 10px;  
+background: var(--accent-purple); 
+box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+border-radius: 40px; 
+	}
+
+	.title_student_container svg{  
+font-size: 16.24px;  
+color: var(--white);
+
+	}
+
+	.title_student_container p{     
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;  
+color: var(--white); 
+	}
+
+	.title_newest_container{ 
+box-sizing: border-box; 
+display: flex; 
+justify-content: center;
+align-items: center;
+padding: 10px 25px;
+gap: 10px;  
+left: 1432px;
+top: 150px; 
+border: 2px solid var(--accent-purple); 
+filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+border-radius: 40px; 
+	}
+	.title_newest_container p{ 
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;  
+color: var(--accent-purple);  
+
+	}
+	.title_newest_container svg{   
+color: var(--accent-purple);
+font-size: 20px;   
+	}
+
+	.teachers_container_icon{
+		width: 40px;
+		height: 40px;
+		background-color: var(--accent-purple);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50px;
+	}
+
+	.teachers_container_icon_sub{
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	/* For screens 768px and below */
+@media (max-width: 768px) {
+ 
+		.title_search_container {
+    display: flex;
+				flex-direction: column;
+    justify-content: space-between; 
+				gap: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+	.title_student_container{ 
+display: flex; 
+justify-content: center;
+align-items: center;
+padding: 5px 15px;
+gap: 5px;  
+background: var(--accent-purple); 
+box-shadow: 0px 20px 50px rgba(191, 21, 108, 0.05);
+border-radius: 40px; 
+	}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+		.title_newest_container{ 
+box-sizing: border-box; 
+display: flex; 
+justify-content: center;
+align-items: center;
+padding: 5px 15px;
+gap: 10px; 
+border: 2px solid var(--accent-purple); 
+filter: drop-shadow(0px 20px 50px rgba(191, 21, 108, 0.05));
+border-radius: 40px; 
+	}
 }
